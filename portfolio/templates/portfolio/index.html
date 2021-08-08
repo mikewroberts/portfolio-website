@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Portfolio</title>
+  <meta name="description" content="This is a template">
+  <meta name="author" content="Mike W Roberts">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {% load static %}
+  <!-- This connects to CSS file that doesn't yet exist -->
+  <link rel="stylesheet" type="text/css" href="{% static "portfolio/css/style.css" %}">
+
+</head>
+
+<body>
+  <div class="app-container">
+
+    <!-- ######################### -->
+    <!-- #      Navigation       # -->
+    <!-- ######################### -->
+
+    <nav>
+      <ul>
+        <li>
+          <a class="active-nav" href="./">Home</a>
+        </li>
+        <li>
+          <a href="./about">About</a>
+        </li>
+        <li>
+          <a href="../resume">R&eacutesum&eacute</a>
+        </li>
+        <li>
+          <a href="./contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <!-- ######################### -->
+    <!-- #      Body Content     # -->
+    <!-- ######################### -->
+
+
+    <div class="body-container-home">
+      <div class="intro left-justify">
+        <div class="black-emboss"id="intro-stripe">
+          <div id="img-face">
+
+          </div>
+
+          <div id="intro-text">
+            <h3>Welcome!</h3>
+            <p>You've arrived at the portfolio of Mike W Roberts.</p>
+            <p>Browse my work examples.</p>
+            <p>View the about page for a more detailed introduction.</p>
+            <p>Feel free to contact me with any inquiries!</p>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="circles-container black-emboss right-justify">
+        <a class="circle-link" id="link-code" href="code">
+          <br>
+          <h1>Code</h1>
+        </a>
+        <a class="circle-link" id="link-maps"  style="color: white" href="maps">
+          <br>
+          <h1 style="color: #49443F">Maps</h1>
+        </a>
+
+      </div>
+    </div>
+    <footer class="footer black-emboss">
+
+    </footer>
+
+  </div>  <!-- END APP CONTAINER-->
+
+
+
+  <!-- This connects to JS file that doesnn't yet exist -->
+  <!-- <script src="js/scripts.js"></script> -->
+
+
+</body>
+</html>

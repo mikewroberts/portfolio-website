@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>About</title>
+  <meta name="description" content="This is a template">
+  <meta name="author" content="Mike W Roberts">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {% load static %}
+  <!-- This connects to CSS file that doesn't yet exist -->
+  <link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/style.css' %}">
+
+</head>
+
+<body>
+  <div class="app-container">
+
+    <!-- ######################### -->
+    <!-- #      Navigation       # -->
+    <!-- ######################### -->
+
+    <nav>
+      <ul>
+        <li>
+          <a href="../">Home</a>
+        </li>
+        <li>
+          <a class="active-nav" href="../about">About</a>
+        </li>
+        <li>
+          <a href="../resume">R&eacutesum&eacute</a>
+        </li>
+        <li>
+          <a href="../contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <!-- ######################### -->
+    <!-- #      Body Content     # -->
+    <!-- ######################### -->
+
+    <div class="background-image">
+      <div class="body-container">
+        <div class="column1 column-box black-emboss scroll-enabled">
+          <h1 class="text-left">The Human</h1>
+          <p class="text-left">
+                Front End : Self-Taught Programmer
+
+            <br>Framework : Problem-Solving & Global Sustainability
+
+            <br>Platform : Strong Drive to Build Better [Everything]
+          </p>
+          <br>
+          <p class="text-right padding-left">
+                After four years of living in China and experiencing the Airpocalypse of industrial smog in 2013 in Tianjin, I returned to the USA to pursue environmental stewardship. It quickly became obvious that environmental academics were not invoking any real change, so I shifted gears and pursued Geospatial Information Systems and software development. Scientists have identified the problems, I want to utilize data and technology to solve them.
+                <br><br>
+                I am currently a student at Portland Community College in Oregon. I have acquired the GIS Certificate and will be finished with the Associates of Science Degree promptly. Immediately after I will pursue an accelerated Bachelors in Computer Science from WGU, along with numerous associated tech certificates.
+                <br><br>
+                Currently I am part of the management team of a pandemic-surviving restaurant in Portland, and am eager to bring my systems-oriented operational solutions skills to the world of software. I am open for and seeking internships, full-time positions, and collaborative projects in solutions-oriented software, especially with organizations utilizing geospatial data.
+                <br><br>
+                Please view my r&eacutesum&eacute and the Maps and Code sections of this website for a more detailed sampling of my work.
+          </p>
+        </div>
+        <div class="column2 column-box black-emboss scroll-enabled">
+          <h1 class="text-right">The Website</h1>
+          <p class="text-right">
+                Front End : Custom Code
+
+            <br>Framework : Django
+
+            <br>Platform : Heroku
+          </p>
+          <br>
+          <p class="text-left padding-right">
+                This website is a custom design with all HTML, CSS, and Javascript written by yours truly. I use the python-based backend framework Django so that I can run locally developed python code on the web. This is all pushed through Git version control to the Linux-based Heroku platform.
+                <br><br>
+                Server-side debugging is performed in a Windows terminal accessing the bash terminal on Heroku. Both local and production apps are connected to a PostgreSQL database, that accepts data from a web-scraping python script.
+                <br><br>
+                All artwork on this site was also done by yours truly including the vectorized photo, the button backgrounds, the map designs etc. The "Code" button background on the homepage is actually the result of a python script and the python script itself that generates that very-psuedo-code imitation of binary smashed together in Adobe Illustrator. I am proficient with many Adobe products, but now use an amalgam of open-source and licensed software such as Affinity Designer and QGIS.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+
+
+  <!-- This connects to JS file that doesnn't yet exist -->
+  <!-- <script src="js/scripts.js"></script> -->
+
+
+</body>
+</html>

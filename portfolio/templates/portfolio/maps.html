@@ -1,0 +1,88 @@
+ <!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Maps</title>
+  <meta name="description" content="This is a template">
+  <meta name="author" content="Mike W Roberts">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {% load static %}
+  <!-- This connects to CSS file that doesn't yet exist -->
+  <link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/style.css' %}">
+
+</head>
+
+<body>
+  <div class="app-container">
+
+    <!-- ######################### -->
+    <!-- #      Navigation       # -->
+    <!-- ######################### -->
+
+    <nav>
+      <ul>
+        <li>
+          <a href="./">Home</a>
+        </li>
+        <li>
+          <a href="./about">About</a>
+        </li>
+        <li>
+          <a href="./resume">R&eacutesum&eacute</a>
+        </li>
+        <li>
+          <a href="./contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <!-- ######################### -->
+    <!-- #      Body Content     # -->
+    <!-- ######################### -->
+
+    <div class="background-image">
+      <div class="body-container-3col">
+        <a href="./maps/feature01">
+          <div class="map-link-container" id="maplink1">
+
+              <h1>Agricultural Zone Buffer Tool</h1>
+
+
+          </div>
+        </a>
+        <!-- <a href="./maps/feature02">
+          <div class="map-link-container" id="maplink2">
+            <h1>Post-Ice-Melt Portland Area</h1>
+          </div>
+        </a> -->
+        <a href="./maps/feature03">
+          <div class="map-link-container" id="maplink3">
+            <h1>CO2 Emissions Infographic</h1>
+          </div>
+        </a>
+        <a href="./maps/feature04">
+          <div class="map-link-container" id="maplink4">
+            <h1>U.S. Climate and Politics</h1>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+
+
+  <!-- This connects to JS file that doesnn't yet exist -->
+  <!-- <script src="js/scripts.js"></script> -->
+
+
+</body>
+</html>

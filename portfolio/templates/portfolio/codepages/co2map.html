@@ -1,0 +1,121 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>CO2 Emissions Map</title>
+  <meta name="description" content="This is a template">
+  <meta name="author" content="Mike W Roberts">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {% load static %}
+  <!-- Basic Layout -->
+  <link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/co2Map.css' %}">
+
+  <!-- Adding GeoJSON file -->
+  <!-- <script type="text/javascript"
+          src="./gjfeatures.js"
+
+  ></script> -->
+
+  <!-- Add in Leaflet -->
+  <!-- Load Leaflet from CDN -->
+  <link rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ= ="
+        crossorigin=""
+  />
+
+  <script type="text/javascript"
+          src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+          integrity="sha512GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og= ="
+          crossorigin=""
+  ></script>
+
+  <!-- load jquery -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+  <!-- Load Esri Leaflet from CDN -->
+  <script type="text/javascript"
+          src="https://unpkg.com/esri-leaflet@2.2.4/dist/esri-leaflet.js"
+          integrity="sha512tyPum7h2h36X52O2gz+Pe8z/3l+Y9S1yEUscbVs5r5aEY5dFmP1WWRY/WLLElnFHa+k1JBQZSCDGwEAnm2IxAQ= ="
+          crossorigin=""
+  ></script>
+
+  <!-- Fonts -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Anton|Roboto&display=swap"
+  />
+
+
+</head>
+
+
+<!-- ------------------------------------------- -->
+<!--  --------------------------------------------->
+
+
+<body>
+  <div class="app-container">
+
+    <div class="nav-container">
+      <div class="">
+        <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Earth_-_The_Noun_Project.svg"
+        alt="image"
+        id="logo"
+        >
+      </div>
+      <div id="spacer">
+
+      </div>
+      <div id="logo-name">
+        Global C02 Emissions Data 2016
+      </div>
+      <div id="spacer">
+
+      </div>
+      <div class="">
+        About
+      </div>
+      <div class="">
+        Contact
+      </div>
+    </div>
+
+    <div class="map-container">
+      <div id="map">
+
+      </div>
+    </div>
+
+    <div class="side-pane-container">
+      <div id="side-pane-title">
+        Select a country to see emissions data
+        <!-- div to be filled in -->
+      </div>
+      <div id="map-legend">
+
+      </div>
+      <div id="flag">
+
+      </div>
+      <div id="data-content">
+
+      </div>
+      <div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- This connects to JS file  -->
+  <script src="{% static 'portfolio/js/co2Map.js' %}"></script>
+
+
+</body>
+</html>
