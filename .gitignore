@@ -5,6 +5,7 @@
 envconfig
 envconfig.envconfig
 img_work/
+debug_log.txt
 
 # Django #
 *.log
