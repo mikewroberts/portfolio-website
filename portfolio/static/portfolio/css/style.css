@@ -15,7 +15,7 @@
 body{
   margin: 0;
   padding: 0;
-  color: #e5e5e5;
+    color: #e5e5e5;
   overflow: hidden;
   background-color: #020202;
   font-family: "Montserrat", sans-serif;
@@ -43,7 +43,6 @@ nav{
   justify-content: right;
   position: relative;
 }
-
 nav ul{
   display: flex;
   position: absolute;
@@ -53,18 +52,15 @@ nav ul{
   padding-left: 5vw;
   padding-right: 5vw;
 }
-
 nav ul li{
   list-style-type: none;
 }
-
 nav ul li:hover{
   border-top: 1px solid black !important;
   border-bottom: 1px solid #777;
   border-radius: 5em;
   margin-top: -2px;
 }
-
 nav > ul > li > a {
   text-decoration: none;
   color: #A39687;
@@ -74,11 +70,9 @@ nav > ul > li > a {
   flex-direction: column;
   justify-content: center;
 }
-
 nav ul li a:hover{
   color: #F4F4F4;
 }
-
 .active-nav{
   color: #F4F4F4;
 }
@@ -88,22 +82,31 @@ nav ul li a:hover{
 /* ############################ */
 
 #self-portrait{
-  background-image: url(../img/map03-tmb.jpg);
+  background-image: url(../img/selfPortrait_bw.jpg);
   background-size: cover;
   background-position: center;
 }
-
+#self-portrait:hover{
+  background-image: url(../img/selfPortrait_small.jpg);
+  background-size: cover;
+  background-position: center;
+  transition-duration: 1.0s;
+}
 #name-box{
+  color: #A39687;
   display: block;
-  height: 10vh;
+  height: 9vh;
   width: 25vw;
   margin: 2.5vh auto 0vh auto;
   border-top: 1px solid black;
   border-bottom: 1px solid #777;
   border-radius: 5em;
   text-align: center;
+  font-size: 2em;
+  line-height: 2em;
 }
 #subname-box{
+  color: #A39687;
   display: block;
   height: 5vh;
   width: 30vw;
@@ -291,77 +294,6 @@ nav ul li a:hover{
   color: lightgreen;
   font-size: 110%;
 }
-
-.map-link-container{
-  /* border: 2px solid pink; */
-  border-radius: 0.5em;
-  text-align: center;
-  height: 50vh;
-  /* width: 50vh; */
-  position: relative;
-  box-shadow: inset -.25em -.25em .5em 0em black,
-              inset .25em .25em .5em 0em white,
-              .25em .25em .75em 0em black,
-              -.35em -.35em .5em -.25em white
-              ;
-  margin: 10vh 0 10vh 0;
-  opacity: 75%;
-  transition: opacity 0.25s ease-in-out;
-}
-
-.map-link-container:hover {
-  opacity: 100%;
-}
-
-#maplink1 {
-  background-image: url(../img/map01-tmb-agri-buffer.jpg);
-  background-size: cover;
-  background-position: center;
-}
-#maplink2 {
-  background-image: url(../img/map02-tmb-holly.jpg);
-  background-size: cover;
-  background-position: center;
-}
-#maplink3 {
-  background-image: url(../img/map03-tmb.jpg);
-  background-size: cover;
-  background-position: center;
-}
-#maplink4 {
-  background-image: url(../img/map04-tmb.jpg);
-  background-size: cover;
-  background-position: center;
-}
-#codelink1 {
-  background-image: url(../img/codepages/thumbs/covid.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-#codelink2 {
-  background-image: url(../img/codepages/thumbs/mortgage_icon.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-#codelink3 {
-  background-image: url(../img/codepages/thumbs/earthVectorFire.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.map-link-container > h1 {
-  position: absolute;
-  top: -10vh;
-  color: white;
-  display: none;
-
-}
-.map-link-container:hover > h1{
-  display: block;
-}
-
 .circles-container{
   /* border: 2px solid white; */
   /* background-color: black; */
@@ -374,7 +306,7 @@ nav ul li a:hover{
   /* margin: 10vh 0 5vh auto; */
 }
 .circle-link{
-  border: 1px solid black;
+  border: 3px solid #A39687;
   border-radius: 20em;
   box-shadow: inset -.25em -.25em .5em 0em #111,
               inset .25em .25em .5em 0em #888,
@@ -392,13 +324,12 @@ nav ul li a:hover{
   transition-property: box-shadow;
 
 }
-
 .circle-link:hover{
   box-shadow: inset -.25em -.25em .5em 0em black,
               inset .25em .25em .5em 0em white,
               0 0 .5em 0em #111;
   color: white;
-  border: 1px solid #333;
+  border: 3px solid #BD8545;
   transition-duration: 0.25s;
 
 }
