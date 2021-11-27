@@ -1,7 +1,5 @@
 {% load %}
 
-/* IF YOU CAN SEE THIS FROM WEB DEVELOPER WINDOW, PROBLEM SOLVED */
-/* CAN YOU */
 * html {
     box-sizing: border-box;
     margin: 0px;
@@ -33,6 +31,57 @@ a {
 }
 
 /* ############################ */
+/* ######### NAV BAR ########## */
+/* ############################ */
+
+nav{
+  display: flex;
+  height: 10vh;
+  background-color: #222;
+  justify-content: right;
+  position: relative;
+}
+
+nav ul{
+  display: flex;
+  position: absolute;
+  bottom: 2vh;
+  margin:0 0 .5vh 0;
+  height: 5vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+nav ul li{
+  list-style-type: none;
+}
+
+nav ul li:hover{
+  border-top: 1px solid black !important;
+  border-bottom: 2px solid #888;
+  border-radius: 5em;
+  margin-top: -2px;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: #A39687;
+  height: 5vh;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav ul li a:hover{
+  color: white;
+}
+
+.active-nav{
+  color: white;
+}
+
+/* ############################ */
 /* ############################ */
 /* ##### GENERAL STYLES ####### */
 /* ############################ */
@@ -60,10 +109,7 @@ a {
 .black-emboss > p > font > font > span > b{
   color: #A39687;
 }
-.active-nav{
-  color: white;
-  box-shadow: none;
-}
+
 .right-justify{
   margin-left: auto;
   margin-right: -1vw;
@@ -145,24 +191,6 @@ a {
   /* border: 2px solid red; */
 }
 
-#img-face{
-  background-image: url(../img/myFace.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 25vh;
-  margin: 0vh 0vw 0vh 15vw;
-  width: 23vh;
-}
-
-#img-face:hover{
-  transform: scale(1.05);
-  transform: rotate(20deg);
-  transition-duration: 1s;
-  margin-left: 12.5vw;
-  margin-right: 5vw;
-}
-
 #intro-text{
   overflow: visible;
   flex-grow: 2;
@@ -170,69 +198,6 @@ a {
   height: auto;
   margin: 0 5vh 5vh 5vh;
   width: 23vh;
-}
-
-nav{
-  display: flex;
-  height: 10vh;
-  /* border-bottom: 1px solid white; */
-  box-shadow: inset 0em -1em .5em -1em #111,
-              inset 0em 1em .5em -.5em black,
-              0em 0em 1em 1em #111;
-  /* background-color: #0D0E0E; */
-  background-color: #222;
-  justify-content: center;
-  position: relative;
-}
-
-nav ul{
-  display: flex;
-  position: absolute;
-  bottom: 2vh;
-  margin:0 0 .5vh 0;
-  box-shadow: inset -.25em -.25em .5em 0em #222,
-              inset .25em .25em .5em 0em #999
-              ;
-  border-radius: 2em;
-  height: 5vh;
-  padding-left: 5vw;
-  padding-right: 5vw;
-  background-color: #333;
-}
-
-nav ul li{
-  list-style-type: none;
-}
-
-nav ul li:hover{
-  /* background-color: #111; */
-  box-shadow: inset 0em -0.5em 2em -1.5em black,
-              inset 1em 2.25em .5em -2em white
-              ;
-  transition-duration: 0.25s;
-}
-
-nav > ul > li > a {
-  text-decoration: none;
-  color: #A39687;
-  height: 5vh;
-  padding: 0 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-nav ul li a:hover{
-  color: white;
-}
-
-a{
-  /* font-size: 2em;
-  text-decoration: none;
-  color: white; */
-}
-
-h1{
-  /* margin: 0 auto; */
 }
 
 .two-column-container {
@@ -284,10 +249,6 @@ h1{
               ;
 }
 
-/* .body-container > div {
-  grid-column: span 4;
-} */
-
 .bc-content-chunk {
   grid-column: span 4;
 }
@@ -304,21 +265,7 @@ h1{
   color: lightgreen;
   font-size: 110%;
 }
-/* .body-link-container{
-  border: 2px solid black;
-  background-color: #444;
-  padding: 1vh 3vw;
-  width: auto;
-  height: auto;
-  margin: 5vh 5vw 0 5vw;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  box-shadow: inset -.25em -.25em .5em 0em #666,
-              inset .25em .25em .5em 0em black
 
-              ;
-} */
 .map-link-container{
   /* border: 2px solid pink; */
   border-radius: 0.5em;
