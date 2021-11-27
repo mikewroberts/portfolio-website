@@ -18,6 +18,8 @@ body{
   color: #e5e5e5;
   overflow: hidden;
   background-color: #020202;
+  font-family: "Montserrat", sans-serif;
+
 }
 img {
   /* outline: solid; */
@@ -80,6 +82,40 @@ nav ul li a:hover{
 .active-nav{
   color: #F4F4F4;
 }
+
+/* ############################ */
+/* ######## HOME PAGE ######### */
+/* ############################ */
+
+#self-portrait{
+  background-image: url(../img/map03-tmb.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#name-box{
+  display: block;
+  height: 10vh;
+  width: 25vw;
+  margin: 2.5vh auto 0vh auto;
+  border-top: 1px solid black;
+  border-bottom: 1px solid #777;
+  border-radius: 5em;
+  text-align: center;
+}
+#subname-box{
+  display: block;
+  height: 5vh;
+  width: 30vw;
+  margin: 1vh auto 0vh auto;
+  padding-top: 0.4vh;
+  border-top: 1px solid black;
+  border-bottom: 1px solid #777;
+  border-radius: 1em;
+  text-align: center;
+  font-size: 1.5em;
+}
+
 
 /* ############################ */
 /* ##### GENERAL STYLES ####### */
@@ -339,13 +375,13 @@ nav ul li a:hover{
 }
 .circle-link{
   border: 1px solid black;
-  border-radius: 2em;
+  border-radius: 20em;
   box-shadow: inset -.25em -.25em .5em 0em #111,
               inset .25em .25em .5em 0em #888,
               0 0 .5em 0em #111;
   background-color: #333;
   width: 20vw;
-  height: 25vh;
+  height: 20vw;
   text-align: center;
   margin: -2.5vh auto 0vh auto;
   font-size: 4.5vh;
