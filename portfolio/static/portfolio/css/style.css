@@ -269,6 +269,7 @@ nav ul li a:hover{
   height: 35vh;
   width: 35vw;
   position: relative;
+  overflow: hidden;
 }
 .corner-label{
   border: 3px solid black;
@@ -439,39 +440,6 @@ nav ul li a:hover{
   color: black;
   /* font-size: 110%; */
   font-weight: bold;
-}
-/* MAP IMAGES */
-#feature01{
-  background-image: url(../img/maps/feature1.jpg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-#feature02{
-  background-image: url(../img/maps/feature2.jpg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-#feature03{
-  background-image: url(../img/maps/feature3.jpg);
-  background-size:auto;
-  background-position:top;
-  background-repeat: no-repeat;
-}
-#feature3 > div {
-  max-height: 80vh;
-  max-width: 100%;
-  overflow-y: scroll;
-}
-#feature3 > div > img {
-  max-width: 100%;
-}
-#feature04{
-  background-image: url(../img/maps/feature4.jpg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 /* ################################# */
