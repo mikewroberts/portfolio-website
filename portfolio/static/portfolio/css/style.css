@@ -15,7 +15,7 @@
 body{
   margin: 0;
   padding: 0;
-    color: #e5e5e5;
+  color: #A39687;
   overflow: hidden;
   background-color: #020202;
   font-family: "Montserrat", sans-serif;
@@ -140,14 +140,6 @@ nav ul li a:hover{
   color: #A39687
 }
 
-/* These mods are an ugly hack for the .html exported .odt on the resume page */
-.black-emboss > p > font > font > b{
-  color: #A39687;
-}
-.black-emboss > p > font > font > span > b{
-  color: #A39687;
-}
-
 .right-justify{
   margin-left: auto;
   margin-right: -1vw;
@@ -195,40 +187,10 @@ nav ul li a:hover{
   background-color: #222;
   overflow-y: auto;
 }
-
 .body-container-home{
   display: flex;
   flex-direction: column;
 }
-
-.intro{
-  display: flex;
-  justify-content: space-around;
-  height: auto;
-  width: 85vw;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  /* border: 1px solid white; */
-}
-
-#intro-stripe{
-  display: flex;
-  /* background-color: black; */
-  height: 22vh;
-  width: 100%;
-  margin: 10vh 0 0 0;
-  /* border: 2px solid red; */
-}
-
-#intro-text{
-  overflow: visible;
-  flex-grow: 2;
-  text-align: left;
-  height: auto;
-  margin: 0 5vh 5vh 5vh;
-  width: 23vh;
-}
-
 .two-column-container {
   grid-template-columns: 1fr 1fr;
   grid-gap: 3vh;
@@ -247,15 +209,16 @@ nav ul li a:hover{
 }
 .body-container{
   /* border: 2px solid black; */
-  /* background-color: #444; */
   padding: 1vh 3vw;
-  width: auto;
+  min-width: 50vw;
+  max-width: 80vw;
   height: auto;
-  margin: 5vh 5vw 0 5vw;
+  margin: 5vh auto 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 3vh;
+  grid-gap: 10vh;
   text-align: center;
+  align-content: center;
 
 }
 .body-container > h1 {
@@ -270,7 +233,7 @@ nav ul li a:hover{
   margin: 5vh 5vw 0 5vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 3vh;
+  grid-gap: 5vh;
   text-align: center;
   box-shadow: inset -.25em -.25em .5em 0em #666,
               inset .25em .25em .5em 0em black
@@ -294,16 +257,35 @@ nav ul li a:hover{
   color: lightgreen;
   font-size: 110%;
 }
-.circles-container{
-  /* border: 2px solid white; */
-  /* background-color: black; */
-  display: flex;
-  justify-content: space-between;
-  width: 80vw;
-  height: 20vh;
-  margin-top: 10vh;
-  margin-bottom: 5vh;
-  /* margin: 10vh 0 5vh auto; */
+.v-spacer{
+  display:block;
+  height: 10vh;
+}
+
+.rectangle{
+  border: 1px solid black;
+  background-color: black;
+  display: block;
+  height: 35vh;
+  width: 35vw;
+  position: relative;
+}
+.corner-label{
+  border: 3px solid black;
+  background-color: grey;
+  display: block;
+  height: 8vh;
+  width: 10vw;
+  float: right;
+}
+.bottom-label{
+  border: 3px solid black;
+  background-color: grey;
+  display: block;
+  height: 8vh;
+  width: 99%;
+  bottom: 0px;
+  position: absolute;
 }
 .circle-link{
   border: 3px solid #A39687;
@@ -334,35 +316,6 @@ nav ul li a:hover{
 
 }
 
-.spacer-circles{
-  /* border: 2px solid white; */
-  border-radius: 20rem;
-  width: 20vw;
-  height: 25vh;
-}
-
-#link-maps{
-  background-image: url(../img/map_button.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-}
-#link-code{
-  background-image: url(../img/button-code.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.footer{
-  /* background-color: black; */
-  margin-top: 5vh;
-  margin-left: -5vw;
-  height: 20vh;
-  width: 110vw;
-  display: block;
-}
   /**********************/
  /*    RESUME PAGE     */
 /**********************/
