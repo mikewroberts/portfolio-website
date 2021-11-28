@@ -10,29 +10,28 @@ def index(request):
     }
     return render(request, 'portfolio/index.html', context)
 
-def maps(request):
-    context= {    }
-    return render(request, 'portfolio/maps.html', context)
+def about(request):
+    context= {
 
-def mapfeature01(request):
-    context= {    }
-    return render(request, 'portfolio/maps/feature01.html', context)
+    }
+    return render(request, 'portfolio/about.html', context)
 
-def mapfeature02(request):
-    context= {    }
-    return render(request, 'portfolio/maps/feature02.html', context)
+def resume(request):
+    context= {
 
-def mapfeature03(request):
-    context= {    }
-    return render(request, 'portfolio/maps/feature03.html', context)
+    }
+    return render(request, 'portfolio/resume.html', context)
 
-def mapfeature04(request):
-    context= {    }
-    return render(request, 'portfolio/maps/feature04.html', context)
+def contact(request):
+    context= {
 
-def code(request):
+    }
+    return render(request, 'portfolio/contact.html', context)
+
+
+def prj_featured_01(request):
     context= {    }
-    return render(request, 'portfolio/code.html', context)
+    return render(request, 'portfolio/projects/featured_01.html', context)
 
 
 ################################
@@ -71,30 +70,5 @@ def covid(request):
       }
     return render(request, 'portfolio/codepages/covid.html', context)
 
-def mortgage(request):
-    context= {    }
-    return render(request, 'portfolio/codepages/mortgage_tool.html', context)
-
-def co2map(request):
-    context= {    }
-    return render(request, 'portfolio/codepages/co2map.html', context)
 
 ################################
-
-def about(request):
-    context= {
-
-    }
-    return render(request, 'portfolio/about.html', context)
-
-def resume(request):
-    context= {
-
-    }
-    return render(request, 'portfolio/resume.html', context)
-
-def contact(request):
-    context= {
-
-    }
-    return render(request, 'portfolio/contact.html', context)
