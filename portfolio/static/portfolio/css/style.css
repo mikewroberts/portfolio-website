@@ -286,7 +286,7 @@ nav ul li a:hover{
 .circle-link{
   border: 3px solid #A39687;
   border-radius: 20em;
-  box-shadow: inset -.25em -.25em .5em 0em #111,
+  box-shadow: inset -.25em -.25em .5em 0em #444,
               inset .25em .25em .5em 0em #888,
               0 0 .5em 0em #111;
   background-color: #333;
@@ -303,7 +303,7 @@ nav ul li a:hover{
 
 }
 .circle-link:hover{
-  box-shadow: inset -.25em -.25em .5em 0em black,
+  box-shadow: inset -.25em -.25em .5em 0em #111,
               inset .25em .25em .5em 0em white,
               0 0 .5em 0em #111;
   color: white;
