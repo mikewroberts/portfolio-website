@@ -279,9 +279,15 @@ nav ul li a:hover{
   position: relative;
   overflow: hidden;
 }
-.corner-label{
-  border: 3px solid #A39687;
+/* this hover control affects corner-label and bottom-label */
+.rectangle:hover > div > div{
+  opacity: 100%;
   background-color: #6BADD7;
+  transition-duration: 0.5s;
+}
+.corner-label{
+  background-color: transparent;
+  border: 3px solid #A39687;
   display: block;
   height: 8vh;
   width: 10vw;
@@ -289,7 +295,7 @@ nav ul li a:hover{
 }
 .bottom-label{
   border: 3px solid #A39687;
-  background-color: #6BADD7;
+  background-color: transparent;
   display: block;
   height: 8vh;
   width: 99%;
