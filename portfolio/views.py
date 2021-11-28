@@ -33,6 +33,18 @@ def prj_featured_01(request):
     context= {    }
     return render(request, 'portfolio/projects/featured_01.html', context)
 
+def prj_featured_02(request):
+    context= {    }
+    return render(request, 'portfolio/projects/featured_02.html', context)
+
+def prj_featured_03(request):
+    context= {    }
+    return render(request, 'portfolio/projects/featured_03.html', context)
+
+def prj_featured_04(request):
+    context= {    }
+    return render(request, 'portfolio/projects/featured_04.html', context)
+
 
 ################################
 from .models import Test
