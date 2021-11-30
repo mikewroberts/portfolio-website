@@ -97,7 +97,7 @@ nav ul li a:hover{
   display: block;
   height: 9vh;
   width: 25vw;
-  margin: 2.5vh auto 0vh auto;
+  margin: 2vh auto 0vh auto;
   text-align: center;
   font-size: 2.4em;
   line-height: 2.2em;
@@ -106,12 +106,12 @@ nav ul li a:hover{
 #subname-box{
   color: #A39687;
   display: block;
-  height: 5vh;
-  width: 20vw;
-  margin: 0.2vh auto 0vh auto;
+  height: 4vh;
+  width: 25vw;
+  margin: 1vh auto 0vh auto;
   text-align: center;
   font-size: 1.2em;
-  border-top: 1px solid #A39687;
+  border-bottom: 1px solid #A39687;
 }
 #contact-section{
   text-align: center;
@@ -123,7 +123,10 @@ nav ul li a:hover{
 /* ##### GENERAL STYLES ####### */
 /* ############################ */
 
-
+.full-screen-height{
+  display:block;
+  height:90vh;   /* 10vh for nav */
+}
 .black-emboss{
   background-color: #1C1C1C;
   border-top: 2px solid #111;
