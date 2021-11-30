@@ -135,13 +135,16 @@ nav ul li a:hover{
 .big-text{
   font-style: bold;
   font-size: 2em;
-  height: 8vh;
+  /* height: 8vh; */
 }
 .underline{
   border-bottom: 1px solid #A39687;
 }
 .clip-line-height{
   line-height: 10%;
+}
+.add-line-height{
+  line-height: 1.5em;
 }
 .full-screen-height{
   display:block;
@@ -305,23 +308,25 @@ nav ul li a:hover{
 .corner-label{
   color: #A39687;
   background-color: #111;
-  border: 2px solid #A39687;
+  border-bottom: 1px solid #A39687;
+  border-left: 1px solid #A39687;
   display: block;
   opacity: 0%;
-  height: 8vh;
+  height: 7vh;
   width: 10vw;
   float: right;
 }
 .bottom-label{
   color: #A39687;
-  border: 2px solid #A39687;
+  border-top: 1px solid #A39687;
   background-color: #111;
   display: block;
   opacity: 0%;
-  height: 8vh;
-  width: 99.5%;
+  height: 7vh;
+  width: 100%;
   bottom: 0px;
   position: absolute;
+  /* line-height: 80%; */
 }
 .circle-link{
   border: 3px solid #A39687;
