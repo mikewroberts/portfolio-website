@@ -117,12 +117,28 @@ nav ul li a:hover{
   text-align: center;
   margin: 0 auto;
 }
+#featured_01{
+  background-image: url(../img/thumbnail_arduino.jpg);
+  background-size: cover;
+  background-position: center;
+}
 
 
 /* ############################ */
 /* ##### GENERAL STYLES ####### */
 /* ############################ */
 
+.big-text{
+  font-style: bold;
+  font-size: 2em;
+  height: 8vh;
+}
+.underline{
+  border-bottom: 1px solid #A39687;
+}
+.clip-line-height{
+  line-height: 10%;
+}
 .full-screen-height{
   display:block;
   height:90vh;   /* 10vh for nav */
@@ -282,26 +298,35 @@ nav ul li a:hover{
   position: relative;
   overflow: hidden;
 }
+.rectangle:hover{
+  /* border: 2px solid #A39687; */
+}
 /* this hover control affects corner-label and bottom-label */
 .rectangle:hover > div > div{
   opacity: 100%;
-  background-color: #6BADD7;
+  /* background-color: #6BADD7; */
+  /* border: 2px solid #A39687; */
   transition-duration: 0.5s;
+  display: block;
 }
 .corner-label{
-  background-color: transparent;
-  border: 3px solid #A39687;
+  color: #A39687;
+  background-color: #111;
+  border: 2px solid #A39687;
   display: block;
+  opacity: 0%;
   height: 8vh;
   width: 10vw;
   float: right;
 }
 .bottom-label{
-  border: 3px solid #A39687;
-  background-color: transparent;
+  color: #A39687;
+  border: 2px solid #A39687;
+  background-color: #111;
   display: block;
+  opacity: 0%;
   height: 8vh;
-  width: 99%;
+  width: 99.5%;
   bottom: 0px;
   position: absolute;
 }
