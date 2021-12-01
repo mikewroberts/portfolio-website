@@ -127,6 +127,14 @@ nav ul li a:hover{
   background-position: center;
 }
 
+/* ############################ */
+/* ##### IMAGE LINKS ########## */
+/* ############################ */
+
+#prj-img-arduino{
+  background-image: url(../img/fullsize_arduino.jpg);
+  height: 66vh;
+}
 
 /* ############################ */
 /* ##### GENERAL STYLES ####### */
@@ -202,6 +210,14 @@ nav ul li a:hover{
   border: 2px solid red;
   width: 66vw;
   margin-top: 5vh;
+}
+.image-container{
+  height: auto;
+  width: 66%;
+  /* border: 2px solid red; */
+  background-size: cover;
+  background-position: center;
+
 }
 .app-container{
   height: 99.6vh;
