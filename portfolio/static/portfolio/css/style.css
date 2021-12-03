@@ -126,6 +126,11 @@ nav ul li a:hover{
   background-size: cover;
   background-position: center;
 }
+#featured_02{
+  background-image: url(../img/thumbnail_jsmap.jpg);
+  background-size: cover;
+  background-position: center;
+}
 
 /* ############################ */
 /* ##### IMAGE LINKS ########## */
@@ -329,7 +334,7 @@ nav ul li a:hover{
   display: block;
   opacity: 0%;
   height: 7vh;
-  width: 10vw;
+  width: 12vw;
   float: right;
 }
 .bottom-label{
