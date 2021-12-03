@@ -140,6 +140,12 @@ nav ul li a:hover{
   background-image: url(../img/fullsize_arduino.jpg);
   height: 66vh;
 }
+#prj-img-jsmap{
+  background-image: url(../img/fullsize_jsmap_02.jpg);
+  background-size: contain;
+  background-repeat:no-repeat;
+  height: 66vh;
+}
 
 /* ############################ */
 /* ##### GENERAL STYLES ####### */
@@ -219,10 +225,9 @@ nav ul li a:hover{
 .image-container{
   height: auto;
   width: 66%;
-  /* border: 2px solid red; */
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
-
 }
 .app-container{
   height: 99.6vh;
