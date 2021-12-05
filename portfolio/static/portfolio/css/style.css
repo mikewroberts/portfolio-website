@@ -131,6 +131,11 @@ nav ul li a:hover{
   background-size: cover;
   background-position: center;
 }
+#featured_03{
+  background-image: url(../img/thumbnail_unity.jpg);
+  background-size: cover;
+  background-position: center;
+}
 
 /* ############################ */
 /* ##### IMAGE LINKS ########## */
