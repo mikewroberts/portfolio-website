@@ -51,32 +51,47 @@
     <div class="background-image">
       <div class="body-container-home">
 
-        <div id="name-box">
+        <div class="big-text underline center">
           <span>Procedural Content Generator</span>
         </div>
 
         <div class="center">
           <p>This project procedurally generates a map in a text file, detects the walls, and records the wall coordinates in a file that is read by a script in Unity. Unity uses the coordinates to place cube objects, making the walls for the procedurally generated dungeon layout.</p>
-          <p>Link to github repo.</p>
+          <p>View code at :   <a class="center" href="https://github.com/mikewroberts/pcg">Github Repo</a></p>
         </div>
 
         <div class="v-spacer"></div>
-
-        <div class="center video-container">
-          <p>Video goes here.</p>
-        </div>
-
-        <div class="v-spacer"></div>
-
-        <div id="name-box">
-          <span>Project Details</span>
-        </div>
 
         <div class="center">
-          <p>Tech Stack: </p>
-          <p>Features: </p>
-          <p>Challenges: </p>
+          <span class="underline big-text">Project Details</span>
         </div>
+
+        <div class="center text-left">
+
+          <p>Python is used to generate the map text file and record the coordinates. Unity is used to create the 3D objects with a C# script.</p><br>
+
+          <p><b>Step O1:</b></p>
+          <p>Creates the randomly generated area. This is done with randomly placed rectangles that overlap. Empty space is represented by '-' characters, and the interior area is denoted with 'x'.</p>
+
+        </div>
+
+        <div class="center image-container" id="prj-img-unity-01"></div>
+
+        <div class="center text-left">
+
+          <p><b>Step O2:</b></p>
+          <p>This was the hard part. In order to delineate the walls, a moving-window algorithm was developed. This algorithm iterates through the whole map line-by-line until it detects a room area. Then it moves around the room area, changing the symbol from 'x' to '0'. A new file with just '0' characters for walls is created. While this file is being created, the algorithm records the (x,y) coordinates to a seperate data file for export to Unity.  </p>
+
+        </div>
+
+        <div class="center image-container" id="prj-img-unity-02"></div>
+
+        <div class="center text-left">
+          <p> <b>Step O3:</b> </p>
+          <p>A simple C# script is used to parse the data file into Unity data structures. A new cube object is created and placed at the corresponding coordinate in the 3D space.</p>
+        </div>
+
+        <div class="center image-container" id="prj-img-unity-03"></div>
 
         <div class="v-spacer"></div>
         <div class="v-spacer"></div>

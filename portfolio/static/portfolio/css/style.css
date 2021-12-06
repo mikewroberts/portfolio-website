@@ -151,6 +151,22 @@ nav ul li a:hover{
   background-repeat:no-repeat;
   height: 66vh;
 }
+#prj-img-unity-01{
+  background-image: url(../img/pcg_console_output.jpg);
+  height: 66vh;
+}
+#prj-img-unity-02{
+  background-image: url(../img/pcg_text_map.jpg);
+  background-size: contain;
+  background-repeat:no-repeat;
+  height: 66vh;
+}
+#prj-img-unity-03{
+  background-image: url(../img/pcg_unity_view.jpg);
+  background-size: contain;
+  background-repeat:no-repeat;
+  height: 66vh;
+}
 
 /* ############################ */
 /* ##### GENERAL STYLES ####### */
