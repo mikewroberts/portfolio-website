@@ -634,6 +634,13 @@ footer{
     display: flex;
     flex-direction: column;
   }
+  .image-container{
+    height: auto;
+    width: 90vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   .rectangle{
     height: 50vh;
     width: 98vw;
